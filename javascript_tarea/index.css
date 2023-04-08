@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #323330;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: #f0db4f;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #323330;
+}
+
+header .container {
+    padding: 25px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    padding: 3px;
+    margin: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #323330;
+    font-weight: bold;
+}
+
+a:hover {
+    color: aliceblue;
+}
+
+.logo {
+    font-size: 60px;
+    margin-bottom: 12px;
+    text-shadow: 5px 3px yellow;
+
+
+}
+
+#hero h1 {
+    font-size: 12vw;
+}
+
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vw;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("https://indexdesarrollo.com/wp-content/uploads/2017/11/aprender-programacion-web.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#como-secreo .container {
+    font-size: 25px;
+    text-align: center;
+    padding: 120px 13px;
+
+}
+
+#para-quesirve .container {
+    font-size: 25px;
+    text-align: center;
+    padding: 120px 13px;
+}
+
+
+#frameworks .container {
+    font-size: 25px;
+    text-align: center;
+    padding: 100px 13px;
+}
+
+#frameworks .letter {
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+    padding: 100px;
+    margin: 0px 30px 30px 30px;
+
+}
+
+#frameworks h3 {
+    font-size: 70px;
+}
+
+.letter:nth-child(1) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png");
+}
+
+.letter:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png");
+}
+
+.letter:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png");
+
+}
+
+#calculator-container {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    margin: 40px;
+    border-radius: 15px;
+    color: #323330;
+    padding: 40px 40px 70px 40px;
+}
+
+footer {
+    background-color: gray;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: #f0db4f;
+    margin: 20px;
+    font-size: 20px;
+}
+
+footer p {
+    margin: 20px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+
+    .logo {
+        font-size: 10vw;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 10px;
+
+    }
+
+    a {
+        font-size: 2.3vw;
+        padding: 0 25px 0 25px;
+    }
+
+    #hero h1 {
+        font-size: 15vw;
+    }
+
+    #como-secreo .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #como-secreo .text-container {
+        width: 50%;
+        text-align: initial;
+        max-width: 600px;
+        padding: 0 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #como-secreo .img-container {
+
+        height: 400px;
+        width: 350px;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg");
+    }
+
+    #para-quesirve .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #para-quesirve .img-container {
+        height: 400px;
+        width: 350px;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+        background-image: url("https://venturebeat.com/wp-content/uploads/2018/01/javascript-e1656424565930.jpg?fit=1786%2C895&strip=all");
+    }
+
+    #para-quesirve .text-container {
+
+        width: 50%;
+        text-align: initial;
+        max-width: 600px;
+        padding: 0 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #frameworks .letter-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #frameworks .letter {
+
+        padding: 7vw;
+    }
+
+    #frameworks h3 {
+        font-size: 4vw;
+    }
+
+
+    footer a {
+        color: #f0db4f;
+        margin: 20px;
+        font-size: 35px;
+    }
+
+    footer p {
+        margin: 20px;
+        font-size: 25px;
+    }
+
+
+
+
+}
